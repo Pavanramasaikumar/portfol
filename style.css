@@ -1,0 +1,273 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    scroll-behavior: smooth;
+}
+.main{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+.header{
+    width: 80%;
+    height: 10%;
+    color: white;
+    background-color:transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    border-radius: 50px;
+    background-color:black;
+    box-shadow: 0 0 10px white;
+    margin-top: 15px;
+}
+.nav-links{
+    margin-left: 550px;
+    list-style: none;
+    display: flex;
+    gap: 50px;
+}
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: clamp(1rem, 1.2vw, 1.3rem);
+     transition: transform 0.3s, text-decoration 0.3s, color 0.3s;
+}
+.nav-links a:hover{
+    transform: scale(1.1);
+    text-decoration: underline;
+    color: red;
+}
+.page{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.page1{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.page2,.page3{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgdet{
+    width: 30%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    padding: 20px;
+}
+.imgdet img{
+    border-radius: 50%;
+}
+.textdet{
+    width: 70%;
+    height: 100%;
+    background-color:black;
+    display: flex;
+    flex-direction: column;
+}
+.textdet form{
+    margin-top: 250px;
+    margin-left: 40px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+.textdet form span{
+    font-size: 1.1em;
+    color: red;
+    text-shadow: 0 0 5px red;
+}
+.textdet form p{
+    margin-top: 20px;
+}
+.textdet footer{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.textdet footer i{
+    font-size: 1em;
+    padding: 15px;
+    margin: 10px;
+    border: 2px solid red;
+    border-radius: 50px;
+}
+.textdet footer a{
+    text-decoration: none;
+    color:white;
+}
+.textdet footer i:hover{
+    background-color:red;
+    box-shadow: 0 0 20px red;
+    color:white;
+}
+.textdet footer i:active{
+    background-color:red;
+    box-shadow: 0 0 10px red;
+    color:white;
+}
+.textdet button{
+    margin-top: 50px;
+    margin-left: 40px;
+    border-radius: 40px;
+    padding: 10px 30px;
+    border-color: red;
+    background-color: black;
+    color: red;
+}
+.textdet button:hover{
+    background-color:red;
+    box-shadow: 0 0 20px red;
+    color: white;
+}
+.textdet button:active{
+    background-color:red;
+    box-shadow: 0 0 10px red;
+    color: white;
+}
+.page2 .p2hd{
+    margin-top: 110px;
+    text-decoration: underline grey;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+.page2 .p2hd1{
+    margin-top: 30px;
+    color: grey;
+}
+.page2 .items{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 50px;
+    gap: 20px;
+}
+.page2 .items div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px 20px;
+    border:2px solid white;
+    font-size: 1e;
+    transition: transform 0.3s;
+}
+.page2 .items div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.page2 .items div img{
+    margin-top: 30px;
+    width: 180px;
+    height: 100px;
+}
+.page2 .items div p{
+    margin-top: 10px;
+    font-weight: 500;
+}
+.page3 .p3hd{
+    margin-top: 110px;
+    text-decoration: underline grey;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+.page3 .p3hd1{
+    margin-top: 30px;
+    color: grey;
+}
+.page3 form{
+    display: flex;
+    flex-direction: column;
+    max-width: 90%;
+    width: 400px;
+    margin: auto;
+    color:white;
+    box-shadow: 0 0 10px white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.page3 form input,
+.page3 form textarea{
+    margin: 10px 0;
+    padding: 10px;
+}
+.page3 button{
+    background-color: rgba(128, 128, 128, 1);
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+.page3 footer{
+    color: white;
+    margin-bottom: 5px;
+}
+.page1 .p1hd{
+    margin-top: 110px;
+    text-decoration: underline grey;
+    color: white;
+    text-shadow: 0 0 10px white;
+}
+.page1 .p1hd1{
+    margin-top: 30px;
+    color: grey;
+}
+.page1 .items{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-top: 50px;
+    gap: 30px;
+}
+.page1 .items div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px 20px;
+    border:2px solid white;
+    font-size: 1e;
+    transition: transform 0.3s;
+}
+.page1 .items div:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    box-shadow: 0 0 10px white;
+}
+.page1 .items div img{
+    margin-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+.page1 .items div p{
+    margin-top: 20px;
+    font-weight: 500;
+}
