@@ -16,7 +16,7 @@ body,html{
 }
 .header{
     width: 80%;
-    height: 10%;
+    height: 8%;
     color: white;
     background-color:transparent;
     display: flex;
@@ -27,7 +27,7 @@ body,html{
     border-radius: 50px;
     background-color:black;
     box-shadow: 0 0 10px white;
-    margin-top: 15px;
+    margin-top: 20px;
 }
 .nav-links{
     margin-left: 550px;
