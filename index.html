@@ -1,152 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        crossorigin="anonymous" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Pavan | Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pavan | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="main">
-        <div class="header">
-            <div class="logo">
-                <h1>.Pavan</h1>
-            </div>
-            <div class="hamburger" onclick="toggleMenu()">
-                <i class="fa fa-bars"></i>
-            </div>
-            <div class="item">
-                <ul class="nav-links" id="navLinks">
-                    <li><a href="#AboutMe">About Me</a></li>
-                    <li><a href="#Skills">Skills</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </div>
+  <div class="main">
+    <header class="header">
+      <div class="logo"><h1>.Pavan</h1></div>
+      <div class="hamburger" onclick="toggleMenu()"><i class="fa fa-bars"></i></div>
+      <nav class="item">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#AboutMe">About Me</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Education">Education</a></li>
+          <li><a href="#Experience">Experience</a></li>
+          <li><a href="#Projects">Projects</a></li>
+          <li><a href="#Achievements">Achievements</a></li>
+          <li><a href="#Contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section id="AboutMe" class="page">
+      <div class="imgdet">
+        <img src="pavan1.jpg" alt="Pavan photo">
+      </div>
+      <div class="textdet">
+        <h1>It's <span>Pavan</span> here</h1>
+        <h2>I'm a <span id="dynamic-role">Front-End Developer</span></h2>
+        <div class="bio-summary">
+          <p>I am a <strong>Computer Science student</strong> passionate about <strong>AI automation, Web Security</strong>, and <strong>modern software development</strong>. With hands-on experience in building real-world projects and completing multiple internships, I combine technical expertise with creativity to deliver impactful solutions.</p>
         </div>
-        <div id="AboutMe" class="page">
-            <div class="imgdet">
-                <img src="pavan1.jpg" alt="Pavan photo" />
-            </div>
-            <div class="textdet">
-                <form>
-                    <h1>It's <span>Pavan</span> here</h1>
-                    <h2>I'm a <span id="dynamic-role">Front-End Developer</span></h2>
-                    <div class="bio-summary">
-                        <p>I'm an AI automation enthusiast and software developer with hands-on experience in building
-                            responsive web apps and automating workflows. I've completed internships at
-                            <strong>NexusLogic Technologies</strong> and <strong>Pinacal Labs</strong>, where I gained
-                            practical experience in frontend development and real-world software solutions. I'm
-                            passionate about using code to solve problems and excited to collaborate on innovative
-                            projects in the AI and software space.
-                        </p>
-                    </div>
-                </form>
-                <footer>
-                    <a href="https://www.instagram.com/pavan_naidu_sirigineedi"><i
-                            class="fa-brands fa-instagram"></i></a>
-                    <a href="https://github.com/Pavanramasaikumar"><i class="fa-brands fa-github"></i></a>
-                    <a href="https://www.linkedin.com/in/siriginidi-pavan-rama-sai-kumar-57b2622ab"><i
-                            class="fa-brands fa-linkedin"></i></a>
-                    <a><i class="fa-solid fa-envelope"></i>sirigineedisomeswari2008@gmail.com</a>
-                </footer>
-                <div>
-                    <a href="#Contact" class="hire-button">Hire Me</a>
-                </div>
-            </div>
-        </div>
+        <footer>
+          <a href="https://www.instagram.com/pavan_naidu_sirigineedi"><i class="fa-brands fa-instagram"></i></a>
+          <a href="https://github.com/Pavanramasaikumar"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/pavan-rama-sai-kumar-siriginidi-57b1a1372/"><i class="fa-brands fa-linkedin"></i></a>
+          <a><i class="fa-solid fa-envelope"></i>👉 siriginidipavan@gmail.com</a>
+        </footer>
+        <div><a href="#Contact" class="hire-button">Hire Me</a></div>
+      </div>
+    </section>
 
-        <div id="Skills" class="page1">
-            <div class="p1hd">
-                <h1>Skills</h1>
-            </div>
-            <div class="p1hd1">
-                <p>Skills I am learning to grow</p>
-            </div>
-            <div class="items">
-                <div><img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="C">
-                    <p>C</p>
-                </div>
-                <div><img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="Python">
-                    <p>Python</p>
-                </div>
-                <div><img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="Java">
-                    <p>Java</p>
-                </div>
-                <div><img src="https://cdn-icons-png.flaticon.com/128/13192/13192332.png" alt="HTML/CSS/JS">
-                    <p>HTML, CSS, JS</p>
-                </div>
-                <div><img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React">
-                    <p>React</p>
-                </div>
-                <div><img src="https://cdn-icons-png.flaticon.com/128/16758/16758081.png" alt="Canva">
-                    <p>Canva</p>
-                </div>
-            </div>
-        </div>
+    <section id="Skills" class="page1">
+      <h1>Skills</h1>
+      <p>Technologies I work with</p>
+      <div class="items">
+        <div><img src="https://cdn-icons-png.flaticon.com/128/3665/3665923.png" alt="C"><p>C</p></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/5968/5968350.png" alt="Python"><p>Python</p></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/226/226777.png" alt="Java"><p>Java</p></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/13192/13192332.png" alt="HTML/CSS/JS"><p>HTML, CSS, JS</p></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/1126/1126012.png" alt="React"><p>React</p></div>
+        <div><img src="https://cdn-icons-png.flaticon.com/128/16758/16758081.png" alt="Canva"><p>Canva</p></div>
+        <div><img src="https://images.apifyusercontent.com/M92B6mGwwCIHH3sbkvv8pnTMYDTBRQ7MdttOVQ0eyE0/rs:fill:250:250/cb:1/aHR0cHM6Ly9hcGlmeS1pbWFnZS11cGxvYWRzLXByb2QuczMudXMtZWFzdC0xLmFtYXpvbmF3cy5jb20vSElNQUNaaE9uN1lKNzFkVHUtYWN0b3ItM3NJQzBENWV6Rm9RcEczbXotTTNpS21ldlJpcy1uOG4ucG5n.webp" alt="n8n"><p>n8n</p></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIXVC7wsEM_t4wGqbEbPGkzkWKdhieCDlcwg&s" alt="Data Structures"><p>Data Structures</p></div>
+        <div><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQzOnbN9Wr4DTqP-4U71iQ5XxT3UyWFHJ4dVw&s" alt="Docker"><p>Docker</p></div>
+      </div>
+    </section>
 
-        <div id="Projects" class="page2">
-            <div class="p2hd">
-                <h1>Projects</h1>
-            </div>
-            <div class="p2hd1">
-                <p>Check out some of my most recent projects 🛠️</p>
-            </div>
-            <div class="items">
-                <div><a href="https://pavanramasaikumar.github.io/handcricketgame/">
-                    <img src="handcricket.png"alt="handcricket"><br>
-                        <p>Hand-Cricket</p>
-                    </a>
-                </div>
-                <div><a href="https://pavanramasaikumar.github.io/clock/">
-                    <img src="clock.png" alt="clock"><br>
-                        <p>Clock</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://pavanramasaikumar.github.io/InternshipProject-1/">
-                        <img src="business-webpage.png" alt="Business Website"><br>
-                        <p>business-webpage</p>
-                    </a>
-                </div>
-                <div>
-                    <a href="https://pavanramasaikumar.github.io/weatherapp/">
-                        <img src="weather-app.png" alt="weather-app"><br>
-                        <p>weather-app</p>
-                    </a>
-                </div>
-            </div>
-        </div>
+    <section id="Education" class="page">
+      <h1>Education</h1>
+      <div class="timeline">
+        <div class="card"><h2>B.Tech - CSE</h2><p>Gayatri Vidya Parishad College of Engineering (2023-2027) | CGPA: 8.6/10</p></div>
+        <div class="card"><h2>12th (Senior Secondary)</h2><p>State Board (2021-2023) | 97%</p></div>
+        <div class="card"><h2>10th (Secondary)</h2><p>State Board (20202021) | 95%</p></div>
+      </div>
+    </section>
 
-        <div id="Contact" class="page3">
-            <div class="p3hd">
-                <h1>Contact</h1>
-            </div>
-            <div class="p3hd1">
-                <p>To get in touch with me 🤝</p>
-            </div>
-            <form action="https://api.web3forms.com/submit" method="POST">
-                <input type="hidden" name="access_key" value="20f82a43-92cf-4c2a-a92b-e922a3ae4481" />
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required />
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required />
-                <label for="phone">Phone:</label>
-                <input type="tel" id="phone" name="phone" required />
-                <label for="subject">Subject:</label>
-                <input type="text" id="subject" name="subject" required />
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-                <button type="submit">Submit</button>
-            </form>
-            <footer>
-                <p>&copy; 2025 Pavan. All Rights Reserved.</p>
-            </footer>
-        </div>
-    </div>
-    <script src="index.js"></script>
+    <section id="Experience" class="page">
+      <h1>Internships & Experience</h1>
+      <div class="cards-grid">
+        <div class="card"><h2>Web Development Intern</h2><h3>Nexus Logic Technologies (Mar-May'25)</h3><p>Designed responsive websites, integrated APIs, and collaborated in code reviews using Git/GitHub.</p></div>
+        <div class="card"><h2>Web Development Intern</h2><h3>Pinnacle Labs (May-Jun'25)</h3><p>Built user-friendly websites with Bootstrap, implemented forms and APIs, and enhanced UI features.</p></div>
+        <div class="card"><h2>AWS AI & ML Intern</h2><h3>Edu Skills (Apr-May'25)</h3><p>Developed ML models using AWS S3, SageMaker & Lambda. Automated workflows and optimized ML pipelines.</p></div>
+      </div>
+    </section>
+
+    <section id="Projects" class="page2">
+      <h1>Projects</h1>
+      <div class="items">
+        <div><a href="https://pavanramasaikumar.github.io/handcricketgame/"><img src="handcricket.png" alt="handcricket"><p>Hand-Cricket Game</p></a></div>
+        <div><a href="https://pavanramasaikumar.github.io/clock/"><img src="clock.png" alt="clock"><p>Clock</p></a></div>
+        <div><a href="https://pavanramasaikumar.github.io/InternshipProject-1/"><img src="business-webpage.png" alt="Business Website"><p>Business Webpage</p></a></div>
+        <div><a href="https://pavanramasaikumar.github.io/weatherapp/"><img src="weather-app.png" alt="Weather App"><p>Weather App</p></a></div>
+        <div><img src="eco-buddy.png" alt="eco-buddy"><p>eco-buddy</p></a></div>
+        <div><img src="serverless-webapplication.png" alt="serverless-webapplication"><p>serverless-webapplication</p></a></div>
+        <div><img src="financiall-chatbot.png" alt="financiall-chatbot"><p>financiall-chatbot</p></a></div>
+        <div><img src="personal-assistant.png" alt="personal-assistant"><p>personal-assistant</p></a></div>
+      </div>
+    </section>
+
+    <section id="Achievements" class="page">
+      <h1>Achievements & Workshops</h1>
+      <ul>
+        <li>Secured <strong>All India Rank 4067</strong> in NCAT 2025</li>
+        <li>Workshop on <strong>GenAI - LLMs & Hugging Face</strong> (Cuvette Tech, Jun'25)</li>
+        <li>Workshop on <strong>GEN-AI</strong> (Gayatri Vidya Parishad College, Jul'25)</li>
+        <li>Freedom with AI Masterclass (Feb'25)</li>
+      </ul>
+    </section>
+
+    <section id="Contact" class="page3">
+      <h1>Contact Me</h1>
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="20f82a43-92cf-4c2a-a92b-e922a3ae4481">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <footer><p>&copy; 2025 Pavan. All Rights Reserved.</p></footer>
+    </section>
+  </div>
+  <script src="index.js"></script>
 </body>
-
 </html>
