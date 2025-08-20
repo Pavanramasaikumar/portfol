@@ -129,6 +129,129 @@ body, html {
   box-shadow: 0 0 20px red;
 }
 
+.n8n-projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  width: 95%;
+  max-width: 1200px;
+  margin-top: 30px;
+}
+
+/* Simple n8n project item styling */
+.n8n-project-item {
+  background: rgba(255, 0, 0, 0.1);
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 600px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.n8n-project-item:hover {
+  background: rgba(255, 0, 0, 0.15);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.n8n-project-item h3 {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+.n8n-project-item p {
+  color: #ccc;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.project-card {
+  background: linear-gradient(145deg, #1a1a1a, #2a2a2a);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  border: 1px solid #333;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(255, 0, 0, 0.2);
+  border-color: red;
+}
+
+.project-image {
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-image img {
+  transform: scale(1.1);
+}
+
+.project-content {
+  padding: 20px;
+  text-align: left;
+}
+
+.project-content h3 {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.project-content p {
+  color: #ccc;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  font-size: 0.95rem;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.tech-tag {
+  background: rgba(255, 0, 0, 0.1);
+  color: red;
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  border: 1px solid rgba(255, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.tech-tag:hover {
+  background: rgba(255, 0, 0, 0.2);
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .n8n-projects {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+  }
+  
+  .project-card {
+    margin: 0 auto;
+    max-width: 400px;
+  }
+}
+
 
 .items {
   display: grid;
@@ -257,22 +380,18 @@ body, html {
   color: red;
 }
 
-/* === TIMELINE (Education) === */
 .timeline { display: flex; flex-direction: column; gap: 20px; margin: 20px; width: 90%; max-width: 800px; }
 .timeline .card { background: #111; border-left: 5px solid red; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px #333; transition: transform 0.3s; }
 .timeline .card:hover { transform: scale(1.03); box-shadow: 0 0 20px red; }
 
-/* === EXPERIENCE CARDS === */
 .cards-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; width: 90%; max-width: 1000px; margin-top: 20px; }
 .cards-grid .card { background: #111; border: 2px solid #333; padding: 20px; border-radius: 12px; transition: transform 0.3s, box-shadow 0.3s; }
 .cards-grid .card:hover { transform: translateY(-6px); box-shadow: 0 0 15px red; }
-.cards-grid h2 { color: red; }
+.cards-grid h2 { color: red; text-align: center; }
 
-/* === ACHIEVEMENTS === */
 #Achievements ul { list-style: none; margin-top: 20px; }
 #Achievements li { background: #111; margin: 10px 0; padding: 15px; border-left: 4px solid red; border-radius: 6px; }
 
-/* === CONTACT FORM IMPROVEMENTS === */
 #Contact {
   background: #0a0a0a;
   padding: 120px 20px 50px;
